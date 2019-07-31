@@ -16,6 +16,6 @@ export default ({ dispatch }) => next => action => {
   action.payload.then(function(response) {
     const newAction = { ...action, payload: response };
     // Take new action and pass it through all middlewares in the stack.
-    dispatch(action);
+    dispatch(newAction);
   });
 };
