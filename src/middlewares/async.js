@@ -1,5 +1,5 @@
 // Create a middleware function
-// dispatch
+// dispatch initiates a new action that will go through the middleware stack
 // next is a reference to the next middleware in the middleware stack
 // action object returned by action creator, contains a type and possibly a payload
 export default ({ dispatch }) => next => action => {
